@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBarId"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_bottombar_topdrive" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/home_bottombar_bg"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/home_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+           >
+
+            <TextView
+                android:id="@+id/tv_home"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_home_auto"
+                android:text="首页"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="12sp" />
+            <!--注意这里的 ImageView 不是“首页”上显示的图标，上面使用了drawableTop来显示图标-->
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignEnd="@+id/tv_home"
+                android:layout_alignRight="@+id/tv_home"
+                android:layout_alignTop="@+id/tv_home"
+                android:src="@drawable/new_dot"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_message_auto"
+                android:text="消息"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignEnd="@+id/tv_message"
+                android:layout_alignRight="@+id/tv_message"
+                android:layout_alignTop="@+id/tv_message"
+                android:src="@drawable/new_dot"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/iv_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:scaleType="center"
+                android:background="@drawable/rect_orgin_auto"
+                android:src="@drawable/tabbar_compose_icon_add"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/discovery_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_discovery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_discover_auto"
+                android:text="发现"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignEnd="@+id/tv_discovery"
+                android:layout_alignRight="@+id/tv_discovery"
+                android:layout_alignTop="@+id/tv_discovery"
+                android:src="@drawable/new_dot"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:drawablePadding="-5dp"
+                android:drawableTop="@drawable/tabbar_profile_auto"
+                android:text="我"
+                android:textColor="@color/home_bottombar_font"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignEnd="@+id/tv_profile"
+                android:layout_alignRight="@+id/tv_profile"
+                android:layout_alignTop="@+id/tv_profile"
+                android:src="@drawable/new_dot"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

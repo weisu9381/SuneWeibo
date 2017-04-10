@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/home_weiboitem_titlebar" />
+
+    <TextView
+        android:id="@+id/weibo_retweet_cotent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:lineSpacingExtra="3dp"
+        android:text="确实像是笔记本电池，两个凸起是防滑垫脚？//@喝七喜的LBJ: 一个笔记本电脑电池都能把人吓成这样~ //@张晨初艺术空间: [吃惊] //@六安自媒体: 求证 //@郭晏平: 首都机场？[吃惊]"
+        android:textColor="@color/home_original_weiboitem_font"
+        android:textSize="12sp" />
+    <include layout="@layout/home_weiboitem_origin_1"/>
+    <include layout="@layout/home_webitem_bottombar"/>
+</LinearLayout>

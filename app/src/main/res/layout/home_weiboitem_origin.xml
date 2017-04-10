@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--首页，原创微博-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_weiboitem_origin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/home_weiboitem_titlebar"/>
+    <include layout="@layout/home_weiboitem_origin_1"/>
+    <include layout="@layout/home_webitem_bottombar"/>
+</LinearLayout>
